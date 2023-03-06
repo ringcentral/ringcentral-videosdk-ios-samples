@@ -1,0 +1,16 @@
+PODS:
+  - Ringcentral-Video-SDK (0.9.0)
+
+DEPENDENCIES:
+  - Ringcentral-Video-SDK (~> 0.9.0)
+
+SPEC REPOS:
+  trunk:
+    - Ringcentral-Video-SDK
+
+SPEC CHECKSUMS:
+  Ringcentral-Video-SDK: 7b2fcecaa2ff175b22b8101e3b7f9a92335ca478
+
+PODFILE CHECKSUM: b42648c23c2dd27fcf90a99ba7296932ba0fc7aa
+
+COCOAPODS: 1.11.3
