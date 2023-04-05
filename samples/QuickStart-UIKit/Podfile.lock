@@ -1,0 +1,20 @@
+PODS:
+  - RCVUIKit (0.1.4)
+  - Ringcentral-Video-SDK (0.10.0)
+
+DEPENDENCIES:
+  - RCVUIKit (~> 0.1.4)
+  - Ringcentral-Video-SDK (~> 0.10.0)
+
+SPEC REPOS:
+  trunk:
+    - RCVUIKit
+    - Ringcentral-Video-SDK
+
+SPEC CHECKSUMS:
+  RCVUIKit: 4087ee667808f778694ee4b10e8b27e9b39d88b1
+  Ringcentral-Video-SDK: 6e1e76a2468fbe5075d431ad4f305dd61e22c3b5
+
+PODFILE CHECKSUM: 57d0fcd811935e90f8366968c12eee17d6621fbc
+
+COCOAPODS: 1.11.3
