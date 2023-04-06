@@ -68,9 +68,6 @@
 		20C1BE3A288A18DF00373DB0 /* QuickStartUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickStartUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		20C1BE6E288B184600373DB0 /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		F6296C1A29D1374200BE3E5F /* RCVUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RCVUIKit.framework; path = ../../libs/RCVUIKit.framework; sourceTree = "<group>"; };
-		F694009F29CDD198003D2FCB /* RcvFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = RcvFont.ttf; sourceTree = "<group>"; };
-		F69400A029CDD198003D2FCB /* meetingParam.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = meetingParam.json; sourceTree = "<group>"; };
-		F69400A129CDD198003D2FCB /* themes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = themes.json; sourceTree = "<group>"; };
 		F694FFD929CDA467003D2FCB /* EngineEventController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EngineEventController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,7 +109,6 @@
 				20C1BE15288A18DD00373DB0 /* Products */,
 				20C1BE62288B134C00373DB0 /* Frameworks */,
 				209F90492890955900B454B1 /* README.md */,
-				F694009E29CDD198003D2FCB /* Resource */,
 				D60D2A87C135BE06BF7BD0E1 /* Pods */,
 			);
 			sourceTree = "<group>";
@@ -179,17 +175,6 @@
 			children = (
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		F694009E29CDD198003D2FCB /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				F694009F29CDD198003D2FCB /* RcvFont.ttf */,
-				F69400A029CDD198003D2FCB /* meetingParam.json */,
-				F69400A129CDD198003D2FCB /* themes.json */,
-			);
-			name = Resource;
-			path = QuickStart/Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
