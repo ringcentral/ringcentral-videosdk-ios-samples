@@ -94,7 +94,7 @@ class MeetingEventController: RcvMeetingEventHandler {
         return
     }
     
-    func onLiveTranscriptionHistoryChanged(_ data: [RcvLiveTranscriptionData], type: RcvLiveTranscriptionUpdateHistoryType) {
+    func onLiveTranscriptionHistoryChanged(_ data: [RcvLiveTranscriptionData]) {
         return
     }
 }

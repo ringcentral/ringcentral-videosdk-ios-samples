@@ -4,6 +4,14 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Arrow-down@2x.png</key>
+		<data>
+		/GAMDQCz+3VhY8Z2AqpkfQ5aaF4=
+		</data>
+		<key>Arrow-down@3x.png</key>
+		<data>
+		zYocKWHg8tXcxyo5aOJh9UDjnTE=
+		</data>
 		<key>BlueLoading@2x.png</key>
 		<data>
 		zGxrRRKVFY8wo3+JbS0eBCJgHIo=
@@ -36,13 +44,61 @@
 		<data>
 		GN0+d9lUtJpYZpKmCPlppwrfBUA=
 		</data>
+		<key>Hide transcript@2x.png</key>
+		<data>
+		k4AReQtloKimZBXx9KNGUrmfW0I=
+		</data>
+		<key>Hide transcript@3x.png</key>
+		<data>
+		huINSX0eqz3vycFoNlqAJhgm4DY=
+		</data>
+		<key>Hide-transcript_Dark@2x.png</key>
+		<data>
+		0op7A5SoFoILKqh5WNkVU+psAPM=
+		</data>
+		<key>Hide-transcript_Dark@3x.png</key>
+		<data>
+		niXe7cf/WP0xggowlXsqfjXwbIU=
+		</data>
 		<key>Info.plist</key>
 		<data>
 		ElhCX+MoW6MfWbUXnLVohrWZKJ4=
 		</data>
+		<key>Pause-dark@2x.png</key>
+		<data>
+		scPr48SHkPRFrfNsEUVmQSyviIg=
+		</data>
+		<key>Pause-dark@3x.png</key>
+		<data>
+		T0A5aT2tPn/CUk6wftabWqbxIoE=
+		</data>
+		<key>Pause@2x.png</key>
+		<data>
+		B2jk+BACc9yrvLIpOw8eAQuRwFg=
+		</data>
+		<key>Pause@3x.png</key>
+		<data>
+		B8mXd2f+qWhcvfDH3A9tT9GBIro=
+		</data>
 		<key>RcvUIKitFont.ttf</key>
 		<data>
-		dZFDTrT6+hyXUPl9kWHCMOFGOaM=
+		lebp5lunZeDmqSJ3jm6h95MTz/Q=
+		</data>
+		<key>Resume-dark@2x.png</key>
+		<data>
+		UljBP5sKvPVMhMepDskznwkuRYQ=
+		</data>
+		<key>Resume-dark@3x.png</key>
+		<data>
+		dqJbrRoKDKP/OZPgY5U4KGtac5g=
+		</data>
+		<key>Resume@2x.png</key>
+		<data>
+		nn9yWI0U4hVkaFTCCWZMV9o+DC0=
+		</data>
+		<key>Resume@3x.png</key>
+		<data>
+		bSyyFJ3l83U6LEGd8Ypz3pkADLo=
 		</data>
 		<key>Start video-1.png</key>
 		<data>
@@ -51,6 +107,22 @@
 		<key>Start video.png</key>
 		<data>
 		KkYcMJCIe2fgtQQ3jK90rp1DzMk=
+		</data>
+		<key>Transcription-dark@2x.png</key>
+		<data>
+		mn/feYwfiCh1r1vVywq37on0CWM=
+		</data>
+		<key>Transcription-dark@3x.png</key>
+		<data>
+		DTSZ0wJMwOhhAjOW21t+ynlCRos=
+		</data>
+		<key>Transcription@2x.png</key>
+		<data>
+		AyBIJWIHmaG6QZGBnMN37fEq8B8=
+		</data>
+		<key>Transcription@3x.png</key>
+		<data>
+		Ik27IjY0IAgoI/KLIn9iJXbMJ9A=
 		</data>
 		<key>active_speaking_bg.png</key>
 		<data>
@@ -592,10 +664,6 @@
 		<data>
 		Hqg5+D9h6CuIl7dPGcd4ffrF9nw=
 		</data>
-		<key>themes.json</key>
-		<data>
-		Z1U4Lqv18IBbkZbFEG/haElIINY=
-		</data>
 		<key>video_off-D@2x.png</key>
 		<data>
 		+4G2ES09j9tvLS4fg4HhbGDYGaE=
@@ -631,6 +699,20 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Arrow-down@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qyU+CoBQ8WP5TYm1btiQ1Ba+AsOK2qus/G1JBtrOyx8=
+			</data>
+		</dict>
+		<key>Arrow-down@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kYnpZn8m++pUu8YWoxSaa94pdjmVPLw5PV0VTyK6Afk=
+			</data>
+		</dict>
 		<key>BlueLoading@2x.png</key>
 		<dict>
 			<key>hash2</key>
@@ -687,11 +769,95 @@
 			dGWFp7uv1dwNt95/ipQM9y/7mDyzkoiK7rr0qX97Z/c=
 			</data>
 		</dict>
+		<key>Hide transcript@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bl9fNHzyewj9BY/xW0HlkyQSHSqZ5boq7Wx9yXHam0M=
+			</data>
+		</dict>
+		<key>Hide transcript@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+JLW3weqUML52sxiJSUrbNHoax2S47Zh5xdfI8kf8gU=
+			</data>
+		</dict>
+		<key>Hide-transcript_Dark@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CFDqvxW0KD7rBHoL+A9nuwCnXxTH1R12wtgvz3pXW3E=
+			</data>
+		</dict>
+		<key>Hide-transcript_Dark@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			A45H6D/PbrNRDlgPdq/+gnzeVf7Xrse0J/lIGv9LuqU=
+			</data>
+		</dict>
+		<key>Pause-dark@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jJ908O5fSKTGU2HP00rR3tArQqHmdFPeGdJhibeM9GM=
+			</data>
+		</dict>
+		<key>Pause-dark@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			F5z/Qc9WA8JaCOe389SkABuXTYtNGZciRLLJHr75yII=
+			</data>
+		</dict>
+		<key>Pause@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			khfZeJ0LY24bFrdRAqOHo290VfDxRv2sMK4L7qBd0kY=
+			</data>
+		</dict>
+		<key>Pause@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			g8UhLzc6/0apA9n3s9AYkZD6zzszOww1J3iQK/W36mY=
+			</data>
+		</dict>
 		<key>RcvUIKitFont.ttf</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TN3DU/RIRgZIvWsKg21hQGXXmvXgN5EtsQgb/EMDWH4=
+			RY5Zyn0Oq4jDpdOJOP6Q15M2zgS6EGV6P38u/xuZtO8=
+			</data>
+		</dict>
+		<key>Resume-dark@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RB4j3OK3315f37DbscDa6fNdNh5C8vqczxybgY2Kjdw=
+			</data>
+		</dict>
+		<key>Resume-dark@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tlzEymIRkMqlVcrWrYy+TNmHeY7yS10QJaPWXyLzAEU=
+			</data>
+		</dict>
+		<key>Resume@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			eXUVDVQMbFC85RTIsp6DlX34LdY+sspzQk6ykpRIecU=
+			</data>
+		</dict>
+		<key>Resume@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZucFC0/Kek8CnpWhChnKMIWy86Bj9wkSTSe9Z11/6SE=
 			</data>
 		</dict>
 		<key>Start video-1.png</key>
@@ -706,6 +872,34 @@
 			<key>hash2</key>
 			<data>
 			oYdMmKROHmxyxMZ/iUuTvz0ZM3YW+FvQU57NgeENPN0=
+			</data>
+		</dict>
+		<key>Transcription-dark@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/LXZmz+K0fo3ue8gSwAsBRXtfNryPqhGcqNs4lGSH7o=
+			</data>
+		</dict>
+		<key>Transcription-dark@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			GtDKpd6YGL4JxQR+Xr9vkYJecxz9juKK4LlwkUUfNZQ=
+			</data>
+		</dict>
+		<key>Transcription@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ulc/IQkpT4KdY+1x0V7jJVQC8Hb57XdOKBnbTepVuTM=
+			</data>
+		</dict>
+		<key>Transcription@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			n+1SpTxT+ezDTfr6u9X1tnBpX0KyRqAaA0gPpe6XsjQ=
 			</data>
 		</dict>
 		<key>active_speaking_bg.png</key>
@@ -1651,13 +1845,6 @@
 			<key>hash2</key>
 			<data>
 			pP7IQt/QdBB/VXvpMOoTPUmtohYNw0/hBjljwG+0adA=
-			</data>
-		</dict>
-		<key>themes.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			tSA86VA5b5l9lDmeXMC0GbNl45p+UXVjqgn1RVGO/yg=
 			</data>
 		</dict>
 		<key>video_off-D@2x.png</key>
