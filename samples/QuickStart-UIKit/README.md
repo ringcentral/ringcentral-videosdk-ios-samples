@@ -11,7 +11,14 @@ With this sample app you can:
 - Start audio/video communication with participants.
 - Mute and unmute local audio.
 - Start and stop the local video.
-- Receive meeting and media event callback, such as participant joined/leave, audio/video muted/unmuted, and statistic data.
+- Switch audio route
+- Start meeting chat with participants
+- View the detail info about the meeting
+- See the participants list in the meeting
+- Start/pause/resume meeting record
+- Invite others by copy meeting link and email
+- Enable and disable captions
+- Start and pause live transcription
 
 ## Prerequisites
 
