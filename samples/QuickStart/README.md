@@ -32,7 +32,7 @@ With this sample app you can:
 
 - Xcode 13+
 - Physical iPhone or iPad device. Simulators are also supported, however, a real device is recommended because of the performance consideration.
-    - OS version 10.0+
+    - OS version 13.0+
 - RingCentral Developer Account (free - https://app.ringcentral.com/signup)
 - Access to RingCentral Video Documentation (https://ringcentral-ringcentral-video-api-docs.readthedocs-hosted.com/en/latest/ using password "workasone")
 
