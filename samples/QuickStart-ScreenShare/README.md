@@ -1,108 +1,43 @@
-# RingCentral Video Client SDK For iOS
+# RingCentral Video Client SDK Screen Share For iOS
 
-## Overview
 
-This sample enables you to quickly get started in your development efforts to create an iOS application with real-time audio/video communication using the RingCentral Video client SDK.
+## Introduction
+Screen sharing refers to the process of sharing screen content with other viewers in the form of video
 
-With this sample app you can:
-
-- Join or start a meeting with a valid access token.
-- Join after host and waiting room flow.
-- Start audio/video communication with participants.
-- Mute and unmute local audio.
-- Start and stop the local video.
-- Mobile phone speaker switch
-- Preview meeting information
-- Leave or end meeting
-- Meeting gallery: Show the participants in the meeting
-- Participants action  
-&emsp; Preview participants list(In meeting, Not connect, In waiting room)  
-&emsp; Invite others by copy meeting link  
-&emsp; Mute all audio(allow unmute/block unmute)  
-&emsp; Unmute all audio  
-&emsp; Mute all video(allow unmute/block unmute)  
-&emsp; Unmute all video  
-&emsp; Mute/Unmute selected participant's audio/video  
-&emsp; Make moderator  
-&emsp; Move selected partitipant to waiting room  
-&emsp; Remove selected participant from meeting
-
+## Sample
 
 ## Prerequisites
+Before implementing the screen sharing feature, please ensure the following:
 
-- Xcode 13+
-- Physical iPhone or iPad device. Simulators are also supported, however, a real device is recommended because of the performance consideration.
-    - OS version 13.0+
-- RingCentral Developer Account (free - https://app.ringcentral.com/signup)
-- Access to RingCentral Video Documentation (https://ringcentral-ringcentral-video-api-docs.readthedocs-hosted.com/en/latest/ using password "workasone")
+- Use an iOS device or simulator that supports audio and video, with a minimum version of iOS 12.0 (real devices are recommended).
 
-## Getting Start
+- Due to the high performance requirements of the screen sharing feature, it is recommended to use iPhone X or newer models.
 
-The following steps show you how to prepare, build, and run the sample application.
+## Implementation Process
+Screen sharing on the iOS platform is achieved by utilizing Apple's [ReplayKit](https://developer.apple.com/documentation/ReplayKit) framework, which allows for capturing and sharing the entire screen content of the system. However, it requires an additional Extension component (Extension process) to be provided by the current app (main app process) for screen recording. This is combined with the relevant APIs of RingCentral Video Client SDK to implement the screen sharing feature.
 
-1. First you will need to install CocoaPods on your machine.
-   [CocoaPods install Guide](https://cocoapods.org)
+## Usage Steps
+### Follow these steps to set up the QuickStart sample:
+1. Make sure you have the sample project "QuickStart" available.
 
-2. Once installed, go to the directory `samples/QuickStart`, run command
-   `pod install`
-   
-3. Open **QuickStart.xcworkspace** in **Xcode**
+2. The "QuickStart" and "QuickStartBroadcast" targets use the same App Group ID. For example, use the group ID "group.com.ringcentral.rcv.sample".
 
-4. Change the **Enable Bitcode** setting value to **No** under **Build Settings**.
+3. Open the AppDelegate.swift file in the "QuickStart" project and locate the line `RcvEngine.instance().setAppGroupName("group.com.ringcentral.rcv.sample")`. Replace the string `"group.com.ringcentral.rcv.sample"` with your own App Group ID obtained in step 2.
 
-5. If use Simulator in arm64(M1 M2 etc) cpu macbook, Add the **Excluded Architectures** -> **Debug/Release** -> **Any iOS Simulator SDK**  setting value to **arm64** under **Build Settings**
+4. Open the SampleHandler.swift file in the "QuickStartBroadcast" target and find the following code snippet:
+   ```
+   private var appGroupName: String {
+        // Note: replace with Your App Group Identifier.
+        return "group.com.ringcentral.rcv.sample"
+   }
+   ```
+   Replace `"group.com.ringcentral.rcv.sample"` with your own App Group ID obtained in step 2.
 
-6. If you already have the client ID and client secret, locate the file **AppConfig.swift** in the sample app and replace **{your client id}** and **{your client secret}** with your client ID and secret which got from the RingCentral developer website.
+5. If you have modified the App ID of the "QuickStartBroadcast" target, update the line `broadcastPicker.preferredExtension = "com.ringcentral.video.quickstart.QuickStartBroadcast"` accordingly.
 
-  ```swift
-    // Replace your client ID and client secret here
-    let ClientID: String = "{your client id}"
-    let ClientSecret: String = "{your client secret}"
-  ```
+6. Build and run the app to test the setup.
 
-7. RingCentral uses auth tokens to authenticate users joining/starting a meeting which makes the communication secure. Follow the steps in our RingCentral Video client SDK Dev Guide (https://ringcentral-ringcentral-video-api-docs.readthedocs-hosted.com/en/latest/sdk/ringcentral-app-auth/) to procure the auth tokens and place the same inside of **AppConfig.swift** file.
+## Frequently Questions
+7. Why does iOS stop capturing when screen sharing is activated and the app enters the background?
 
-  ```swift
-    // Place your personal JWT or username and password
-    let options = RcvOauthOptions.create()
-    
-    // Either the JWT flow
-    options?.setGrantType(RcvGrantType.jwt)
-    options?.setJwt(PersonalJwt)
-    // Or the password flow
-    options?.setGrantType(RcvGrantType.password)
-    options?.setUserName(UserName)
-    options?.setPassword(Password)
-    
-    RcvEngine.instance().authorize(options)
-    
-    // Replace your token pair string here for testing
-    let TokenJsonStr = #"""
-    {
-        "access_token": "{access token}",
-        "token_type": "bearer",
-        "expires_in": 3600,
-        "refresh_token": "{refresh token}",
-        "refresh_token_expires_in": 604800,
-        "scope": "Meetings",
-        "owner_id": "{owner id}",
-        "endpoint_id": "{endpoint id}"
-    }
-    """#
-  ```
-
-### The video client SDK integration
-
-The client SDK framework must be integrated into the sample project before it can be opened and built. Currently, the **rcvsdk.xcframework** has been configured on the sample projects, therefore, you don't need to change it.
-
-### Run the Application
-
-1. Open Xcode and open a project by clicking **File > Open**, select a sample project under the **samples** folder, and click Open.
-
-2. In the project settings, ensure your Apple Developer **Team** is updated to your own under **Signing & Capabilities** and also update the **bundle identifier** to your own.
-
-3. Build and Run the project, if successful, the application should startup in your apple device.
-
-## Contact Us
-
-- Dev Support & Feedback: For feedback, questions or suggestions around SDK please email videosdkfeedback@ringcentral.com or rcv-partners@ringcentral.com
+Enable audio recording in the background mode for the application.
