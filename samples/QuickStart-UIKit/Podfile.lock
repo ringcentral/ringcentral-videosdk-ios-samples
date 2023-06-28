@@ -1,9 +1,9 @@
 PODS:
-  - RCVUIKit (0.3.0)
+  - RCVUIKit (0.3.2)
   - Ringcentral-Video-SDK (0.12.0)
 
 DEPENDENCIES:
-  - RCVUIKit (~> 0.3.0)
+  - RCVUIKit (~> 0.3.2)
   - Ringcentral-Video-SDK (~> 0.12.0)
 
 SPEC REPOS:
@@ -12,9 +12,9 @@ SPEC REPOS:
     - Ringcentral-Video-SDK
 
 SPEC CHECKSUMS:
-  RCVUIKit: 23eafea8e74063db607ddf0750469528f621aa48
+  RCVUIKit: 856d50b7df7e3284d0c0da1160b28d0b5bdfcc5d
   Ringcentral-Video-SDK: 6efc97986dfa9142765d8d143fa81ecd0c0eda8d
 
-PODFILE CHECKSUM: 8fd7f995d31d06704de42230e5bad7acefa8f134
+PODFILE CHECKSUM: 9e51d85e50bd079498e249b29c952608bf3ed0d8
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.12.1

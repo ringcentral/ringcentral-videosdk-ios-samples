@@ -36,6 +36,38 @@
 		<data>
 		g2Sv7hDslpmXHEF+b1BiL+8K3F8=
 		</data>
+		<key>FSLayoutDown@2x.png</key>
+		<data>
+		QPQmMvmZg/jtAZPHNXaQoMMkY/g=
+		</data>
+		<key>FSLayoutDown@3x.png</key>
+		<data>
+		QTqKaG4g5T2iedADKa6mPWUWOKM=
+		</data>
+		<key>FSLayoutLeft@2x.png</key>
+		<data>
+		+4x6Y1oaKHGLYqcgFJtA41PP9Ao=
+		</data>
+		<key>FSLayoutLeft@3x.png</key>
+		<data>
+		khXGQN0P3VjQ3JiynQZE/TC5J5I=
+		</data>
+		<key>FSLayoutRight@2x.png</key>
+		<data>
+		SpF6Q9bHDcFxHpvYGXQsUMRvZf0=
+		</data>
+		<key>FSLayoutRight@3x.png</key>
+		<data>
+		qF0kAEPOm76G0fEs37nLr3BJP58=
+		</data>
+		<key>FSLayoutUp@2x.png</key>
+		<data>
+		ue0Cqd4nysXxD2n0qzkDGvlIdCk=
+		</data>
+		<key>FSLayoutUp@3x.png</key>
+		<data>
+		BGHJKyGc+XZ7udnNC4oOQea9yiw=
+		</data>
 		<key>GrayLoading-HUD@2x.png</key>
 		<data>
 		VtFPm1J0chYTv3Fw4KUvzccmm7o=
@@ -255,6 +287,10 @@
 		<key>iconMobileActivespeakerWhiteSs@3x.png</key>
 		<data>
 		pyg89f2kfzlbffwqP8zpEaBKqj4=
+		</data>
+		<key>iconMobileCustom.png</key>
+		<data>
+		W3OQr+cwOdnKT9z7IL+ZwFC8GB4=
 		</data>
 		<key>iconMobileFilmstripWhite@2x.png</key>
 		<data>
@@ -755,6 +791,62 @@
 			pUqqaRPqAQBs1l0nJjkpGSBDYjysHokNC8vRbQOvz3I=
 			</data>
 		</dict>
+		<key>FSLayoutDown@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			GdY8XfMe90MP2lu2fB/Wg44NUis5ozsMa46CrjOBgH4=
+			</data>
+		</dict>
+		<key>FSLayoutDown@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Jc0xqNv7XXat4TGsLWqC2EKFZHzfz0m/1FI/BHlWu6M=
+			</data>
+		</dict>
+		<key>FSLayoutLeft@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HBpu4ue5HEsMEj3mbmaJL2qrm7ExkcyB8WxwCYtTrTk=
+			</data>
+		</dict>
+		<key>FSLayoutLeft@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7eLyaDwRzHFkEuVLv/EaZk6jtoDDtQ39GMnAxa1tzTg=
+			</data>
+		</dict>
+		<key>FSLayoutRight@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Z4PRRhmByOVZqfLxh1FqeZCVxK3BNsx/TRL0uQ/ncu8=
+			</data>
+		</dict>
+		<key>FSLayoutRight@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Mg7GGh9YccL8/9f72qWpFVtaWP0xgTpOnm35nMo2OCU=
+			</data>
+		</dict>
+		<key>FSLayoutUp@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3CLX9DvrOM87OvSuN6speGEcBxaMrSo/STZD0T0apMI=
+			</data>
+		</dict>
+		<key>FSLayoutUp@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			IWBFAk6VQoAjCmscUayxn/jxkf5yOuWtxW2nmWENtmg=
+			</data>
+		</dict>
 		<key>GrayLoading-HUD@2x.png</key>
 		<dict>
 			<key>hash2</key>
@@ -1131,6 +1223,13 @@
 			<key>hash2</key>
 			<data>
 			ZJduo2R2WTGyrBSi3H581ROWaRY84eyTobCqsilJFeM=
+			</data>
+		</dict>
+		<key>iconMobileCustom.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DZ58lXlHWVQLusQt/TAb9SRNiPMjRKyK7dkaQ2wARrU=
 			</data>
 		</dict>
 		<key>iconMobileFilmstripWhite@2x.png</key>
