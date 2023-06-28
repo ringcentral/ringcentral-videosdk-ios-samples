@@ -8,7 +8,15 @@
 import rcvsdk
 
 class MeetingUserEventHandler: RcvMeetingUserEventHandler
-{    
+{
+    func onCallOut(_ id: String, errorCode: Int64) {
+        delegate?.onCallOut(id, errorCode: errorCode)
+    }
+    
+    func onDeleteDial(_ errorCode: Int64) {
+        delegate?.onDeleteDial(errorCode)
+    }
+    
     weak var delegate: RcvMeetingUserEventHandler?
 
     init(delegate: RcvMeetingUserEventHandler) {

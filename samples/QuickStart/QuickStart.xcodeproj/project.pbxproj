@@ -32,6 +32,7 @@
 		20C1BE76288B303500373DB0 /* ActiveMeetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C1BE75288B303400373DB0 /* ActiveMeetingViewController.swift */; };
 		458CDC32298A6730003EC08C /* RCVMeetingGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458CDC31298A6730003EC08C /* RCVMeetingGalleryViewController.swift */; };
 		4594ED5929ACA61A007367AF /* RCVMeetingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4594ED5829ACA619007367AF /* RCVMeetingPageViewController.swift */; };
+		45D34E5C2A4C188500B1CDB8 /* Segment.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45D34E5B2A4C188500B1CDB8 /* Segment.xcframework */; };
 		F60C87C429753AC0009FB928 /* RCVToolBarDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60C87C329753AC0009FB928 /* RCVToolBarDataSource.swift */; };
 		F60C87C8297545C0009FB928 /* RCVButtonSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60C87C7297545C0009FB928 /* RCVButtonSource.swift */; };
 		F633C9A3296E851A00A2148A /* RCVThemesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F633C9A2296E851A00A2148A /* RCVThemesManager.swift */; };
@@ -108,6 +109,7 @@
 		20C1BE75288B303400373DB0 /* ActiveMeetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveMeetingViewController.swift; sourceTree = "<group>"; };
 		458CDC31298A6730003EC08C /* RCVMeetingGalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCVMeetingGalleryViewController.swift; sourceTree = "<group>"; };
 		4594ED5829ACA619007367AF /* RCVMeetingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCVMeetingPageViewController.swift; sourceTree = "<group>"; };
+		45D34E5B2A4C188500B1CDB8 /* Segment.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Segment.xcframework; path = "Pods/Ringcentral-Video-SDK/Segment.xcframework"; sourceTree = "<group>"; };
 		977BB5F3B6378B1F43BB29DC /* libPods-QuickStart.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QuickStart.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8015EF36A963F08A5B889FF /* Pods-QuickStart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickStart.debug.xcconfig"; path = "Target Support Files/Pods-QuickStart/Pods-QuickStart.debug.xcconfig"; sourceTree = "<group>"; };
 		E2ADC3B65245FB3E9431B948 /* Pods-QuickStart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickStart.release.xcconfig"; path = "Target Support Files/Pods-QuickStart/Pods-QuickStart.release.xcconfig"; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				14210B2429B5919000DEEA1A /* RcvReplayKitExtension.xcframework in Frameworks */,
 				14210B2029B5912800DEEA1A /* rcvsdk.xcframework in Frameworks */,
 				14210B1F29B5911800DEEA1A /* libPods-QuickStart.a in Frameworks */,
+				45D34E5C2A4C188500B1CDB8 /* Segment.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +262,7 @@
 		20C1BE62288B134C00373DB0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				45D34E5B2A4C188500B1CDB8 /* Segment.xcframework */,
 				14210B2329B5919000DEEA1A /* RcvReplayKitExtension.xcframework */,
 				14210B1829B58F9C00DEEA1A /* rcvsdk.xcframework */,
 				209F903D288F32EF00B454B1 /* rcvsdk.xcframework */,

@@ -482,6 +482,13 @@ extension ActiveMeetingViewController: RcvMeetingEventHandler {
 
 
 extension ActiveMeetingViewController: RcvMeetingUserEventHandler {
+    func onCallOut(_ id: String, errorCode: Int64) {
+        
+    }
+    
+    func onDeleteDial(_ errorCode: Int64) {
+        
+    }
     
     func onActiveSpeakerUserChanged(_ participant: RcvIParticipant?) {
     }

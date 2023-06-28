@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        RcvEngine.create(ClientID, clientSecret: ClientSecret)
+        RcvEngine.create(ClientID, clientSecret: ClientSecret, isShareUsageData: false)
         
         // There are two options to do the authentication.
         
