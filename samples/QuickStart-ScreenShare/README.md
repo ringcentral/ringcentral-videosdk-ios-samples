@@ -45,6 +45,9 @@ Screen sharing on the iOS platform is achieved by utilizing Apple's [ReplayKit](
 6. If you have modified the App ID of the "QuickStartBroadcast" target, update the line `broadcastPicker.preferredExtension = "com.ringcentral.video.quickstart.QuickStartBroadcast"` in file `ActiveMeetingViewController.swift` accordingly.
 
 7. Build and run the app.
+   
+   <img width="400" alt="image" src="https://github.com/ringcentral/ringcentral-videosdk-ios-samples/assets/17132949/c21fc6a6-cca1-498d-8caa-0efa2c144ddc">
+
 
 ## Frequently Questions
 - Why does iOS stop capturing when screen sharing is activated and the app enters the background?
