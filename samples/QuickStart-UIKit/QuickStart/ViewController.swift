@@ -131,9 +131,9 @@ extension ViewController: RcvEngineEventHandler
             }
             displayRcvVideoView()
             
-            let customLayout = CustomLayoutViewController(frame: self.view.frame, meetingID: self.meetingId!)
+            let customLayout = CustomLayoutViewController(meetingID: self.meetingId!)
             
-            RCVUIKitModuleManager.layout!.setCustomLayoutView(view: customLayout)
+            RCVUIKitModuleManager.layout!.setCustomLayoutView(viewController: customLayout)
         }
         else {
             switch (type) {

@@ -132,7 +132,6 @@ class CustomLayoutModel {
             localCanvas?.setRenderMode(.fit)
             localCanvas?.setMirrorMode(true)
             self.localVideoCanvas = localCanvas
-            videoController.setupLocalVideo(localCanvas)
             
             self.localVideoMute = videoController.isMuted()
         }
@@ -204,10 +203,6 @@ class CustomLayoutModel {
             return
         }
         
-        guard let videoController = self.meetingController?.getVideoController() else {
-            return
-        }
-        
         let userList = meetingUserController.getMeetingUserList()
         for (_,value) in userList {
             if(value.status() != RcvEParticipantStatus.ACTIVE){
@@ -220,8 +215,6 @@ class CustomLayoutModel {
                     let canvas = RCVideoCanvas(view: nil, uid: userUid)
                     canvas?.setRenderMode(.fit)
                     self.videoCanvasDict.updateValue(canvas!, forKey: userUid)
-                    
-                    videoController.setupRemoteVideo(canvas!)
                 }
                 
                 let retemoteInfo = RemoteParticipantInfo(participant: value)
@@ -339,6 +332,26 @@ class CustomLayoutModel {
         
         self.participantsList[index].isVideoMute = mute
     }
+    
+    func setupVideoCanvas() {
+        if let videoController = self.meetingController?.getVideoController() {
+            for canvas in self.videoCanvasDict {
+                videoController.setupRemoteVideo(canvas.value)
+            }
+            
+            videoController.setupLocalVideo(self.localVideoCanvas)
+        }
+    }
+    
+    func removeVideoCanvas() {
+        if let videoController = self.meetingController?.getVideoController() {
+            for canvas in self.videoCanvasDict {
+                videoController.removeRemoteVideo(canvas.value)
+            }
+            
+            videoController.removeLocalVideo()
+        }
+    }
 }
 
 extension CustomLayoutModel: RcvMeetingEventHandler {
@@ -396,6 +409,14 @@ extension CustomLayoutModel: RcvMeetingEventHandler {
 }
 
 extension CustomLayoutModel: RcvMeetingUserEventHandler {
+    func onCallOut(_ id: String, errorCode: Int64) {
+        
+    }
+    
+    func onDeleteDial(_ errorCode: Int64) {
+        
+    }
+    
     
     func onActiveSpeakerUserChanged(_ participant: RcvIParticipant?) {
      
@@ -478,9 +499,6 @@ extension CustomLayoutModel: RcvAudioEventHandler {
     }
     
     func onRemoteAudioMuteChanged(_ participant: RcvIParticipant?, muted: Bool) {
-        if muted == false {
-            print("++++for test: set remote false, name:", participant!.displayName())
-        }
         updateParticipantAudioMute(id: participant!.getModelId(), mute: muted)
     }
     
