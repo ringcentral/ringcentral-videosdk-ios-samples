@@ -29,6 +29,7 @@
 		F619FB142A4BBEFC0035EB36 /* CustomLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F619FB102A4BBEFC0035EB36 /* CustomLayoutView.swift */; };
 		F619FB152A4BBEFC0035EB36 /* CustomLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F619FB112A4BBEFC0035EB36 /* CustomLayoutViewController.swift */; };
 		F619FB162A4BBEFC0035EB36 /* CustomParticipantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F619FB122A4BBEFC0035EB36 /* CustomParticipantView.swift */; };
+		F668341D2A4E6EB2009FEE39 /* Segment.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F66834192A4E6BF9009FEE39 /* Segment.xcframework */; };
 		F694FFDA29CDA467003D2FCB /* EngineEventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F694FFD929CDA467003D2FCB /* EngineEventController.swift */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,7 @@
 		F619FB112A4BBEFC0035EB36 /* CustomLayoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLayoutViewController.swift; sourceTree = "<group>"; };
 		F619FB122A4BBEFC0035EB36 /* CustomParticipantView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomParticipantView.swift; sourceTree = "<group>"; };
 		F6296C1A29D1374200BE3E5F /* RCVUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RCVUIKit.framework; path = ../../libs/RCVUIKit.framework; sourceTree = "<group>"; };
+		F66834192A4E6BF9009FEE39 /* Segment.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Segment.xcframework; path = "Pods/Ringcentral-Video-SDK/Segment.xcframework"; sourceTree = "<group>"; };
 		F694FFD929CDA467003D2FCB /* EngineEventController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EngineEventController.swift; sourceTree = "<group>"; };
 		F83C999A4CFE080B3BF2CBC0 /* libPods-QuickStart.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QuickStart.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -92,6 +94,7 @@
 				14DBAC2D29DDBEC9007D4987 /* rcvsdk.xcframework in Frameworks */,
 				14DBAC3529DDBF47007D4987 /* RcvReplayKitExtension.xcframework in Frameworks */,
 				8AC1EED67206D43F50F1B081 /* libPods-QuickStart.a in Frameworks */,
+				F668341D2A4E6EB2009FEE39 /* Segment.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +178,7 @@
 		20C1BE62288B134C00373DB0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F66834192A4E6BF9009FEE39 /* Segment.xcframework */,
 				14DBAC3429DDBF47007D4987 /* RcvReplayKitExtension.xcframework */,
 				14DBAC3029DDBF2B007D4987 /* RCVUIKit.framework */,
 				14DBAC2C29DDBEC9007D4987 /* rcvsdk.xcframework */,

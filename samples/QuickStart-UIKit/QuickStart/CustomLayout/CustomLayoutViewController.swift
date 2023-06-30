@@ -9,7 +9,7 @@ import UIKit
 import Combine
 import rcvsdk
 
-class CustomLayoutViewController: UIView, UIScrollViewDelegate {
+class CustomLayoutViewController: UIViewController, UIScrollViewDelegate {
     private var currentPageIndex: Int = 0 {
         didSet {
             self.pageChanged()
@@ -27,7 +27,7 @@ class CustomLayoutViewController: UIView, UIScrollViewDelegate {
     private let visualBGView = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
     
     private lazy var customLayoutView: CustomLayoutView = {
-        let view = CustomLayoutView(frame: self.frame)
+        let view = CustomLayoutView(frame: self.view.frame)
         return view
     }()
     
@@ -46,8 +46,8 @@ class CustomLayoutViewController: UIView, UIScrollViewDelegate {
 
         scrollView.contentInsetAdjustmentBehavior = .never
         
-        let with = self.bounds.width * 16
-        let hight = self.bounds.height
+        let with = self.view.bounds.width * 16
+        let hight = self.view.bounds.height
         scrollView.contentSize = CGSize(width: with, height: hight)
 
         return scrollView
@@ -66,20 +66,44 @@ class CustomLayoutViewController: UIView, UIScrollViewDelegate {
         return pageControl
     }()
     
-    init(frame: CGRect, meetingID: String) {
-        super.init(frame: frame)
+    init(meetingID: String) {
+        super.init(nibName: nil, bundle: nil)
         self.meetingID = meetingID
         CustomLayoutViewController.customLayoutModel = CustomLayoutModel(meetingID: meetingID)
-        
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
         configSubView()
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         updatePageControlTotalPages()
         
         bindModel()
     }
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        CustomLayoutViewController.customLayoutModel?.setupVideoCanvas()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.cancelable.removeAll()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        CustomLayoutViewController.customLayoutModel?.removeVideoCanvas()
     }
     
     private func reload() {
@@ -105,17 +129,17 @@ class CustomLayoutViewController: UIView, UIScrollViewDelegate {
     }
     
     private func configSubView() {
-        self.addSubview(self.scrollView)
+        self.view.addSubview(self.scrollView)
         self.scrollView.makeConstraintsToBindToSuperview()
         
-        self.addSubview(self.customLayoutView)
+        self.view.addSubview(self.customLayoutView)
         self.customLayoutView.makeConstraintsToBindToSuperview()
 
-        self.addSubview(pageControlContianerView)
+        self.view.addSubview(pageControlContianerView)
         pageControlContianerView.translatesAutoresizingMaskIntoConstraints = false
-        pageControlContianerView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
-        pageControlContianerView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
-        pageControlBottomConstraint = pageControlContianerView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -10)
+        pageControlContianerView.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
+        pageControlContianerView.rightAnchor.constraint(equalTo: self.view.rightAnchor).isActive = true
+        pageControlBottomConstraint = pageControlContianerView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -10)
         pageControlBottomConstraint?.isActive = true
 
         pageControlContianerView.addSubview(pageControl)
@@ -125,8 +149,7 @@ class CustomLayoutViewController: UIView, UIScrollViewDelegate {
         pageControl.centerXAnchor.constraint(equalTo: pageControlContianerView.centerXAnchor).isActive = true
         pageControl.centerYAnchor.constraint(equalTo: pageControlContianerView.centerYAnchor).isActive = true
 
-        self.bringSubviewToFront(self.scrollView)
-        //self.view.bringSubviewToFront(pageControlContianerView)
+        self.view.bringSubviewToFront(self.scrollView)
     }
     
     private func bindModel() {
