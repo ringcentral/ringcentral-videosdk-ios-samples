@@ -344,13 +344,23 @@ class CustomLayoutModel {
     }
     
     func removeVideoCanvas() {
-        if let videoController = self.meetingController?.getVideoController() {
-            for canvas in self.videoCanvasDict {
-                videoController.removeRemoteVideo(canvas.value)
-            }
-            
-            videoController.removeLocalVideo()
+        guard let meetingID = self.meetingID else {
+            return
         }
+        
+        guard let meetingController = RcvEngine.instance().getMeetingController(meetingID) else {
+            return
+        }
+        
+        guard let videoController = meetingController.getVideoController() else {
+            return
+        }
+        
+        for canvas in self.videoCanvasDict {
+            videoController.removeRemoteVideo(canvas.value)
+        }
+        
+        videoController.removeLocalVideo()
     }
 }
 

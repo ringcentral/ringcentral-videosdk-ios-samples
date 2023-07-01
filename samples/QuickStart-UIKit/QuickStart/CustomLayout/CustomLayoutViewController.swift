@@ -98,12 +98,11 @@ class CustomLayoutViewController: UIViewController, UIScrollViewDelegate {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.cancelable.removeAll()
+        CustomLayoutViewController.customLayoutModel?.removeVideoCanvas()
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        
-        CustomLayoutViewController.customLayoutModel?.removeVideoCanvas()
     }
     
     private func reload() {
