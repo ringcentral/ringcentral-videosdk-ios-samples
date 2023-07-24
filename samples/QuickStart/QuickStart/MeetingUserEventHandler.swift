@@ -9,6 +9,10 @@ import rcvsdk
 
 class MeetingUserEventHandler: RcvMeetingUserEventHandler
 {
+    func onLocalDialStateChanged(_ id: String, callerId: String, number: String, status: RcvCallPhoneStatus, deleted: Bool) {
+        delegate?.onLocalDialStateChanged(id, callerId: callerId, number: number, status: status, deleted: deleted)
+    }
+    
     func onCallOut(_ id: String, errorCode: Int64) {
         delegate?.onCallOut(id, errorCode: errorCode)
     }

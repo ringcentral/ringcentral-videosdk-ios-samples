@@ -482,6 +482,10 @@ extension ActiveMeetingViewController: RcvMeetingEventHandler {
 
 
 extension ActiveMeetingViewController: RcvMeetingUserEventHandler {
+    func onLocalDialStateChanged(_ id: String, callerId: String, number: String, status: RcvCallPhoneStatus, deleted: Bool) {
+        
+    }
+    
     func onCallOut(_ id: String, errorCode: Int64) {
         
     }
